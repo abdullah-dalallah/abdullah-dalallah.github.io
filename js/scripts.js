@@ -287,6 +287,12 @@ $(function () {
 	
 	if($('#map').length) {
 		initMap();
+		var myCenter= {
+			center:new google.maps.LatLng(51.508742,-0.120850),
+			zoom:5,
+		};
+		var marker = new google.maps.Marker({position: myCenter});
+		marker.setMap(map);
 	}
 
 
